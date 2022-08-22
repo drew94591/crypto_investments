@@ -6,6 +6,7 @@ is greater than 1% to cover the costs of doing the transaction.  This applicatio
 
 ---
 
+
 ## Technologies
 
 This application leverages python 3.7 with the following libraries and packages:
