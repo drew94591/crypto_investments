@@ -1,8 +1,6 @@
 # Cryptocurrency Investments
-This application identifies if there are any potential profit opportunities between two bitcoin exchanges via arbitrage. Arbitrage occurs when the price of one exchange is much lower than
-another exchange such that you could buy in this case bitcoin at the lower priced exchange and then selling at the higher exchange for a profit minus any exchange fees. 
-In this case, the two exchanges are Bitstamp and Coinbase. Their bitcoin prices for the first part of 2018 has been provided.  A profit is made if the spread between the two exchanges
-is greater than 1% to cover the costs of doing the transaction.  This application then displays the calculated returns on each qualifying arbitrage.
+This application clusters cryptocurrencies by their performance in different time periods.  It then plots the data to visually show the performance of each cryptocurrency.
+Specifically, the application uses the K-Means and PCA algorithms to analyze the crypto assets.
 
 ---
 
@@ -17,7 +15,20 @@ This application leverages python 3.7 with the following libraries and packages:
 
 * [pandas](https://github.com/pandas-dev/pandas) - A flexible and power data analysis/manipulation Python library used in financial calculations.
 
-* [matplotlib](https://matplotlib.org) - A comprehensive library for creating static, animated, and interactive visualizations in Python.
+* [scikit-learn](https://scikit-learn.org/) - A Python machine learning library that provides supervised and unsupervised learning algorithms.
+
+* [hvplot](https://pyviz-dev.github.io/hvplot/user_guide/Introduction.html) - Provides a high-level plotting API built on HoloViews that provides a general and consistent API for plotting data.
+
+---
+
+## Installation Guide
+
+Before running the application first install the following dependencies.
+
+```python
+pip install -U scikit-learn
+conda install -c pyviz hvplot
+```
 
 ---
 
